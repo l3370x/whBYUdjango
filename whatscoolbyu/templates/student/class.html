@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% include "student/leftBar.html" %}
+{% endblock %}
+
+
+
+{% block content %}
+{{ theClass.class_title }}
+<br>
+<br>
+Welcome to the class page - {{ theClass.class_title }}.
+<ul>
+{% for l in theLessons %}
+<div class="lessonRow">
+<li><a href="/student/lesson/{{ l.id }}">{{ l.title }}</a></li>
+</div>
+{% empty %}
+No Lessons yet for this class.
+{% endfor %}
+</ul>
+{% endblock %}
+
+
+
+{% block username %}
+Hello {{ theStudent.first_name }}
+{% endblock %}

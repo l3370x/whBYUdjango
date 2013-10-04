@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% if user.is_authenticated %}
+{% if noTeam %}
+<a href="/team/create/"><li class="leftBarLink">Create Team</li></a>
+{% else %}
+<a href="/team/home/"><li class="leftBarLink">My Team Page</li></a>
+{% endif %}
+<br>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<form action="/user/mySettings/" method="post">
+	{% csrf_token %} 
+	{% if error %}<p class="error"><i>{{ error }}</i></p>{% endif %}
+	{% for field in form %}
+	<div class="fieldWrapper">
+	
+	{{ field.label_tag }}
+	{% if field.field.required %}
+	<label class="required">*</label>
+	{% endif %}
+	{{ field }}
+	<label class=error>{{ field.errors|striptags }}</label>
+	
+	</div>
+	{% endfor %}
+	<p>
+		<input type="submit" value="Submit" />
+	</p>
+</form>
+{% endblock %}

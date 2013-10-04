@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% include "teacher/leftBar.html" %}
+{% endblock %}
+
+
+
+{% block content %}
+{{ c.class_title }}
+<br>
+<br>
+List Of Students:
+<div class='listOfStudents'>
+{% for student in theStudents %}
+<div class="studentRow">
+<li><a href="/teacher/student/{{ student.user }}">{{ student.first_name }} {{ student.last_name }}</a></li>
+</div>
+{% empty %}
+Sorry, no students are added yet.
+{% endfor %}
+<p><a class="btn" href=/teacher/class/{{ c.id }}/addStudents>Add Students</a></p>
+</div>
+<br>
+<br>
+List Of Lessons:
+<div class='listOfLessons'>
+{% for lesson in theLessons %}
+<li><a href="/teacher/lesson/{{ lesson.id }}">{{ lesson.title }}</a></li>
+{% empty %}
+No lessons added yet.
+{% endfor %}
+<p><a class="btn" href=/teacher/class/{{ c.id }}/addLesson>Add Lesson</a></p>
+</div>
+<br>
+<br>
+<form action="/teacher/class/{{ c.id }}/" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+<br>
+<p><a class="btn" href=/teacher/class/{{ c.id }}/changeClassTitle>Change Class Title</a></p>
+
+{% endblock %}
+
+
+
+{% block username %}
+Hello {{ theTeacher.first_name }}
+{% endblock %}

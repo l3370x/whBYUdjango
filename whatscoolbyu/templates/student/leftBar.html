@@ -1,0 +1,12 @@
+
+<ul>
+<a href="/student"><li class="leftBarLink">Home</li></a>
+<a href="/auth/logout/"><li class="leftBarLink">Log Out</li></a>
+<br>
+<li class="leftBarHiddenLink"><a href="/student/allClasses">My Classes</a></li>
+{% for c in myClasses %}
+<a href="/student/class/{{ c.id }}"><li class="leftBarLinkindent1">{{ c.class_title }}</li></a>
+{% empty %}
+Sorry, no classes are added yet.
+{% endfor %}
+</ul>

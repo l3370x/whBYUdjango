@@ -1,0 +1,6 @@
+*.pyc
+*~
+*.swp
+*backup*.sql
+work.zip
+test1.zip

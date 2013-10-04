@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% include "teacher/leftBar.html" %}
+{% endblock %}
+
+
+
+{% block content %}
+<table>
+<tr>
+<td>Name</td>
+<td>E-mail</td>
+</tr>
+<div class="studentRow">
+<tr>
+<td><a href="/teacher/student/{{ s.user }}">{{ s.first_name }} {{ s.last_name }}</a></td>
+<td>{{ s.email }}</td>
+</tr>
+</div>
+</table>
+<br>
+
+<form action="/teacher/student/{{ s.user }}/changeInfo" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+
+{% endblock %}
+
+
+
+{% block username %}
+Hello {{ theTeacher.first_name }}
+{% endblock %}

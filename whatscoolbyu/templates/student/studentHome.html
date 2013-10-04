@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% include "student/leftBar.html" %}
+{% endblock %}
+
+{% block content %}
+<br>
+This is the student page!
+
+{% endblock %}
+
+{% block username %}
+Welcome {{ theStudent.first_name }}
+{% endblock %}

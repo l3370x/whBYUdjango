@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% if user.is_authenticated %}
+{% if noTeam %}
+<a href="/team/create/"><li class="leftBarLink">Create Team</li></a>
+<a href="/team/all/"><li class="leftBarLink">Join Team</li></a>
+{% else %}
+{% if teamLeader %}
+<a href="/team/delete/"><li class="leftBarLink">Delete Team</li></a>
+{% endif %}
+{% endif %}
+<br>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+Are you sure you want to delete your team?
+<form action="/team/deleteReal/" method="post">{% csrf_token %}
+<input type="submit" value="Yes"></form>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% include "student/leftBar.html" %}
+{% endblock %}
+
+{% block extraHeader %}
+{% endblock %}
+
+{% block content %}
+{{ theLesson.title }}
+<br>
+{{ theLesson.date }}
+<br>
+<br>
+{{ theLesson.display_safeHTML }}
+
+
+
+{% endblock %}
+
+
+
+{% block username %}
+Hello {{ theStudent.first_name }}
+{% endblock %}

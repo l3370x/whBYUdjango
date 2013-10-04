@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% include "student/leftBar.html" %}
+{% endblock %}
+
+
+
+{% block content %}
+<ul>
+{% for c in myClasses %}
+<div class="classRow">
+<li><a href="/student/class/{{ c.id }}">{{ c.class_title }}</a></li>
+</div>
+{% empty %}
+Sorry, no classes are added yet.
+{% endfor %}
+</ul>
+{% endblock %}
+
+
+
+{% block username %}
+Hello {{ theStudent.first_name }}
+{% endblock %}

@@ -1,0 +1,11 @@
+AddHandler fcgid-script .fcgi
+RewriteEngine on
+RewriteBase /
+
+# Exclude any paths that should be served literally:
+RewriteRule 	^static/		-			[L,NC]
+# Add a default page
+RewriteRule 	^$			home			[NC]
+
+RewriteCond %{REQUEST_FILENAME} !(cgi-bin/whatscoolbyu.fcgi) 
+RewriteRule 	^(.*)$ 			cgi-bin/whatscoolbyu.fcgi/$1	[QSA,L]

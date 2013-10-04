@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% include "teacher/leftBar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class=rightPage>
+<br>
+Add A Student!
+
+<form action="/teacher/addStudent/" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+
+{% endblock %}
+
+{% block username %}
+Hello {{ theTeacher.first_name }}
+
+{% endblock %}

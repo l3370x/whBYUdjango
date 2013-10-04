@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% if user.is_authenticated %}
+{% if noTeam %}
+<a href="/team/create/"><li class="leftBarLink">Create Team</li></a>
+{% else %}
+<a href="/team/home/"><li class="leftBarLink">My Team Page</li></a>
+{% endif %}
+<br>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+The selected team has been recently deleted.  Try another team.
+{% endblock %}

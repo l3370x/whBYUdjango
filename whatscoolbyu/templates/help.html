@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block leftBar %}
+{% if user.is_authenticated %}
+{% if noTeam %}
+<a href="/team/create/"><li class="leftBarLink">Create Team</li></a>
+<a href="/team/all/"><li class="leftBarLink">Join Team</li></a>
+{% else %}
+{% if teamLeader %}
+<a href="/team/delete/"><li class="leftBarLink">Delete Team</li></a>
+{% endif %}
+{% endif %}
+<br>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+The best way to get help or to report a problem is to e-mail me.  I have this nifty form below you can use.
+<br>
+<br>
+<form action="/waffle/getHelp/" method="post">
+	{% csrf_token %} 
+	{% if error %}<p class="error"><i>{{ error }}</i></p>{% endif %}
+	{% for field in form %}
+	<div class="fieldWrapper">
+	
+	{{ field.label_tag }}
+	{% if field.field.required %}
+	<label class="required">*</label>
+	{% endif %}
+	{{ field }}
+	<label class=error>{{ field.errors|striptags }}</label>
+	
+	</div>
+	{% endfor %}
+	<p>
+		<input type="submit" value="Submit" />
+	</p>
+</form>
+
+{% endblock %}

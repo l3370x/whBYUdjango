@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GiantWaffle - Artemis Spaceship Bridge Simulator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "templates/style.css" %}" />
+{% block extraHeader %}
+{% endblock %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+<div class="topbar">
+<ul>
+{% if user.is_authenticated %}
+<li class="tbHeader">{% block username %} {% endblock %}</li>
+{% endif %}
+<li class="tbHeader">GiantWaffle - Artemis Spaceship Bridge Simulator</li>
+</ul>
+</div>
+
+<div class="djContent">
+<div class="well sidebar-nav-fixed">
+<ul>
+<a href="/home"><li class="leftBarLink">Home</li></a>
+{% if user.is_authenticated %}
+<a href="/auth/logout/"><li class="leftBarLink">Log Out</li></a>
+<br>
+<a href="/user/myProfile/"><li class="leftBarLink">My Profile</li></a>
+
+{% else %}
+<a href="/auth/login/"><li class="leftBarLink">Log In</li></a>
+<a href="/auth/create/"><li class="leftBarLink">Create Profile</li></a>
+{% endif %}
+<br>
+<a href="/waffle/calendar/"><li class="leftBarLink">Calendar</li></a>
+<br>
+{% block leftBar %}
+{% endblock %}
+<a href="/team/all/"><li class="leftBarLink">View All Teams</li></a>
+<br>
+<a href="http://www.artemis.eochu.com/"><li class="leftBarLink">Artemis SBS Website</li></a>
+<a href="http://www.twitch.tv/giantwaffle"><li class="leftBarLink">GiantWaffle's Twitch</li></a>
+<br>
+<a href="/waffle/getHelp"><li class="leftBarLink">Help</li></a>
+<a href="/waffle/reportError"><li class="leftBarLink">Report Error</li></a>
+
+</div>
+
+<div class="row-fluid">
+{% block content %}
+{% endblock %}
+</div>
+
+</div>
+
+</div>
+{% include "googletracking" %}
+</body>
+</html>

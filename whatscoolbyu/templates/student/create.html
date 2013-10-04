@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block content %}
+
+Only create a username if you have bought the game and are serious about joining the tournament.
+<br>The rules for this website are:  Don't be a douche.
+<br>
+<br>
+Also, you don't have to have a Twitch or Skype account.  These are just to help people connect easier
+and know who is who.  If you do put in your Twitch or Skype info, you can hide it to everyone on the 
+website by ckecking the hide boxes below.
+<br>
+<br>
+
+<p><label class="required">*</label> indicates a required field</p>
+<br>
+<form action="/auth/create/" method="post">
+	{% csrf_token %} 
+	{% if error %}<p class="error"><i>{{ error }}</i></p>{% endif %}
+	{% for field in form %}
+	<div class="fieldWrapper">
+	
+	{{ field.label_tag }}
+	{% if field.field.required %}
+	<label class="required">*</label>
+	{% endif %}
+	{{ field }}
+	<label class=error>{{ field.errors|striptags }}</label>
+	
+	</div>
+	{% endfor %}
+	<p>
+		<input type="submit" value="Submit" />
+	</p>
+</form>
+
+{% endblock %}
+
