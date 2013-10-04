@@ -1,7 +1,7 @@
 from django.conf.urls import *
 
 
-urlpatterns = patterns('student.views',
+urlpatterns = patterns('appData.views',
 			url(r'^home/$', 'Home'),
 			url(r'^$', 'Home'),
 			)

@@ -1,8 +1,7 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31186960-3']);
-  _gaq.push(['_setDomainName', 'bluemoonscience.com']);
+  _gaq.push(['_setAccount', 'UA-31186960-2']);
   _gaq.push(['_trackPageview']);
 
   (function() {

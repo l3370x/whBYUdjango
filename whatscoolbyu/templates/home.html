@@ -1,37 +1,144 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block extraHeader %}
+<link rel="stylesheet" type="text/css"
+	href="/static/templates/default.css" />
+<link rel="stylesheet" type="text/css"
+	href="/static/templates/component.css" />
 
-{% block leftBar %}
-{% if user.is_authenticated %}
-{% if noTeam %}
-<a href="/team/create/"><li class="leftBarLink">Create Team</li></a>
-<a href="/team/all/"><li class="leftBarLink">Join Team</li></a>
-{% else %}
-<a href="/team/home/"><li class="leftBarLink">My Team Page</li></a>
-{% endif %}
-<br>
-{% endif %}
-{% endblock %}
+<script src="/static/js/masonry.pkgd.min.js"></script>
+<script src="/static/js/modernizr.custom.js"></script>
+{% endblock %} {% block content %}
+<ul class="grid effect-6" id="grid">
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+		<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea"><div class="dateTitle">Title</div>
+		<div class="dateDescription">
+		2This idvasdvasdvasdvasdbfgbadfbas the
+			first.</div>
+			</div>
+	</li>
+	<li>
+		<div class="dateIdea"><div class="dateTitle">Title</div>
+		<div class="dateDescription">1111111111This is the first.</div></div>
+	</li>
+	<li>
+		<div class="dateIdea"><div class="dateTitle">Title</div>
+		<div class="dateDescription">1111111111This is the first.</div></div>
+	</li>
+	<li><div class="dateIdea"><div class="dateTitle">Title</div>
+		<div class="dateDescription">1111111111This is the first.This is how I feel. well, I don't
+			want to write all that, so here are the lyrics of what I am listening
+			to. But i'm afraind to love. so real by jeff buckly. oohhhh, i am so
+			riff like. oh I was so real. of i was so oh oh oh oh real.!!! the
+			firsasdfat.</div></div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This iThis gbdfgbedfgb the first.</div></li>
+	<li><div class="dateIdea">This is stsdfche first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This is thesdasdf first.</div></li>
+	<li><div class="dateIdea">This is asdvxcvasdvthe first.</div></li>
+	<li><div class="dateIdea">This idvasdvasfvasdva the first.</div></li>
+	<li><div class="dateIdea">This isasdfasd the first.</div></li>
+	<li><div class="dateIdea">This issdfasdf the first.</div></li>
+	<li><div class="dateIdea">This is thsdvasdve first.</div></li>
+	<li><div class="dateIdea">This isasdfasd the first.</div></li>
+	<li><div class="dateIdea">This is thxcvzxcve first.</div></li>
+	<li><div class="dateIdea">This is thzxcvzxcve first.</div></li>
+	<li><div class="dateIdea">This is thasdvasde first.</div></li>
+	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
+	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This idvasdvasdvasdvasdbfgbadfbas
+			the first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This idvasdvass the first.</div></li>
+	<li><div class="dateIdea">This is how I feel. well, I don't
+			want to write all that, so here are the lyrics of what I am listening
+			to. But i'm afraind to love. so real by jeff buckly. oohhhh, i am so
+			riff like. oh I was so real. of i was so oh oh oh oh real.!!! the
+			firsasdfat.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This iThis gbdfgbedfgb the first.</div></li>
+	<li><div class="dateIdea">This is stsdfche first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This is thesdasdf first.</div></li>
+	<li><div class="dateIdea">This is asdvxcvasdvthe first.</div></li>
+	<li><div class="dateIdea">This idvasdvasfvasdva the first.</div></li>
+	<li><div class="dateIdea">This isasdfasd the first.</div></li>
+	<li><div class="dateIdea">This issdfasdf the first.</div></li>
+	<li><div class="dateIdea">This is thsdvasdve first.</div></li>
+	<li><div class="dateIdea">This isasdfasd the first.</div></li>
+	<li><div class="dateIdea">This is thxcvzxcve first.</div></li>
+	<li><div class="dateIdea">This is thzxcvzxcve first.</div></li>
+	<li><div class="dateIdea">This is thasdvasde first.</div></li>
+	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
+	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This idvasdvasdvasdvasdbfgbadfbas
+			the first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This idvasdvass the first.</div></li>
+	<li><div class="dateIdea">This is how I feel. well, I don't
+			want to write all that, so here are the lyrics of what I am listening
+			to. But i'm afraind to love. so real by jeff buckly. oohhhh, i am so
+			riff like. oh I was so real. of i was so oh oh oh oh real.!!! the
+			firsasdfat.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This iThis gbdfgbedfgb the first.</div></li>
+	<li><div class="dateIdea">This is stsdfche first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This is thesdasdf first.</div></li>
+	<li><div class="dateIdea">This is asdvxcvasdvthe first.</div></li>
+	<li><div class="dateIdea">This idvasdvasfvasdva the first.</div></li>
+	<li><div class="dateIdea">This isasdfasd the first.</div></li>
+	<li><div class="dateIdea">This issdfasdf the first.</div></li>
+	<li><div class="dateIdea">This is thsdvasdve first.</div></li>
+	<li><div class="dateIdea">This isasdfasd the first.</div></li>
+	<li><div class="dateIdea">This is thxcvzxcve first.</div></li>
+	<li><div class="dateIdea">This is thzxcvzxcve first.</div></li>
+	<li><div class="dateIdea">This is thasdvasde first.</div></li>
+	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
+	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This idvasdvasdvasdvasdbfgbadfbas
+			the first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This idvasdvass the first.</div></li>
+	<li><div class="dateIdea">This is how I feel. well, I don't
+			want to write all that, so here are the lyrics of what I am listening
+			to. But i'm afraind to love. so real by jeff buckly. oohhhh, i am so
+			riff like. oh I was so real. of i was so oh oh oh oh real.!!! the
+			firsasdfat.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This iThis gbdfgbedfgb the first.</div></li>
+	<li><div class="dateIdea">This is stsdfche first.</div></li>
+	<li><div class="dateIdea">This is the first.</div></li>
+	<li><div class="dateIdea">This is thesdasdf first.</div></li>
+	<li><div class="dateIdea">This is asdvxcvasdvthe first.</div></li>
+	<li><div class="dateIdea">This idvasdvasfvasdva the first.</div></li>
+	<li><div class="dateIdea">This isasdfasd the first.</div></li>
+	<li><div class="dateIdea">This issdfasdf the first.</div></li>
+	<li><div class="dateIdea">This is thsdvasdve first.</div></li>
+	<li><div class="dateIdea">This isasdfasd the first.</div></li>
+	<li><div class="dateIdea">This is thxcvzxcve first.</div></li>
+	<li><div class="dateIdea">This is thzxcvzxcve first.</div></li>
+	<li><div class="dateIdea">This is thasdvasde first.</div></li>
+	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
+	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
 
-{% block content %}
-<br>Welcome to GiantWaffle's Artemis SBS tounament building website.  You can <a href="/team/all/">view all the teams</a> that have 
-been created, or <a href="/team/create/">create</a> your own team.
-<br>
-<br>
-You can view a <a href="/waffle/calendar/">calendar</a> of upcomming Artemis SBS tournamet events.  Remember to select your own timezone.
-<br>
-<br>
-Please, only create or join teams if you are planning on playing online with your team.  If you are not going to buy the game, but are curious
-about the teams, feel free to <a href="/team/all/">check out all the teams</a>, or look at the <a href="/waffle/calendar/">calendar</a>.
-<br>
-<br>
-Recent Activity:
-{% for n in allNews %}
-<br>
-{{ n.user.username }}
-{{ n.timestamp }}
-{{ n.title }}
-{{ n.message }}
-<br>
-{% endfor %}
-
+</ul>
+<script src="/static/js/imagesloaded.js"></script>
+<script src="/static/js/classie.js"></script>
+<script src="/static/js/AnimOnScroll.js"></script>
+<script>
+	new AnimOnScroll(document.getElementById('grid'), {
+		minDuration : 0.4,
+		maxDuration : 0.7,
+		viewportFactor : 0.2
+	});
+</script>
 {% endblock %}

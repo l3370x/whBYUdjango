@@ -19,7 +19,6 @@ class Student(models.Model):
 	myTeam = models.ForeignKey('Team',editable=False, blank=True, null=True,on_delete=models.SET_NULL)
 	email = models.EmailField(blank=True)
 	
-
 class StudentForm(forms.ModelForm):
 	class Meta:
 		model = Student
