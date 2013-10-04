@@ -1,4 +1,4 @@
-# Django settings for bluemoon project.
+# Django settings for whatscoolbyu project.
 from django.conf.global_settings import EMAIL_HOST, EMAIL_HOST_USER,\
 	EMAIL_HOST_PASSWORD, EMAIL_PORT
 
@@ -97,7 +97,7 @@ STATICFILES_DIRS = (
 )
  
 if locHost:
-	STATICFILES_DIRS = (basepath + '/bluemoon/myStatic',)
+	STATICFILES_DIRS = (basepath + '/whatscoolbyu/myStatic',)
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -128,16 +128,16 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'bluemoon.urls'
+ROOT_URLCONF = 'whatscoolbyu.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'bluemoon.wsgi.application'
+WSGI_APPLICATION = 'whatscoolbyu.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    basepath + '/bluemoon/templates',
+    basepath + '/whatscoolbyu/templates',
 )
 
 INSTALLED_APPS = (
