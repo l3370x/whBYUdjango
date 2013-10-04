@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from student.models import Student, Team
+from appData.models import Student, Team
 
 
 class StudentAdmin(admin.ModelAdmin):

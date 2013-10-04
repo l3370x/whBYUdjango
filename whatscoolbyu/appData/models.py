@@ -25,9 +25,9 @@ class StudentForm(forms.ModelForm):
 		model = Student
 
 class StudentUpdate(UpdateView):
-    model = Student
-    fields = ['twitchName','hideTwitch','skypeName','hideSkype','email','hideEmail']
-    template_name_suffix = '_update_form'
+	model = Student
+	fields = ['twitchName','hideTwitch','skypeName','hideSkype','email','hideEmail']
+	template_name_suffix = '_update_form'
 
 class LoginForm(forms.Form):
 	username = forms.CharField(max_length=100)
@@ -80,4 +80,4 @@ class HelpForm(forms.Form):
 	question=forms.CharField(widget=forms.Textarea,label="Message")
 
 class CreateTeamForm(forms.Form):
-   teamName = forms.CharField(max_length=50,label="Team Name")
+	teamName = forms.CharField(max_length=50,label="Team Name")
