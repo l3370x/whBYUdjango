@@ -9,13 +9,13 @@ import os
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 locHost = False
 if 'aaron' in ROOT_PATH:
-	basepath = '/home/aaron/schoolSite/kpms-carat'
+	basepath = '/home/aaron/wrong'
 	locHost = True
 elif 'Aaron' in ROOT_PATH:
-	basepath = 'C:\Users\Aaron\workspaceWaffle\giantwaffle'
+	basepath = 'C:\Users\Aaron\workspaceWhatsCoolBYU\whBYUdjango'
 	locHost = True
 else:
-	basepath = '/homepages/19/d429491612/htdocs/giantwaffle'
+	basepath = '/homepages/19/d429491612/htdocs/byu'
 
 ADMINS = (
     # ('Aaron Miller', 'l3370x@gmail.com'),
@@ -26,11 +26,11 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'db492851746',  # Or path to database file if using sqlite3.
+        'NAME': 'db496146953',  # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'dbo492851746',
-        'PASSWORD': 'wafflepassword',
-        'HOST': 'db492851746.db.1and1.com',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'USER': 'dbo496146953',
+        'PASSWORD': 'WCBYUpassword',
+        'HOST': 'db496146953.db.1and1.com',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '3306',  # Set to empty string for default.
     }
 }
@@ -108,7 +108,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'z!x51df4rta5ou=*w*!%$1p(x&@h=*5k0yx$$=#5s8%0^w--ed'
+SECRET_KEY = 'z!x5aar13374ou=*w*!%$1p(x&@h=*5k0yx$$=#5s8%0^w--ed'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
