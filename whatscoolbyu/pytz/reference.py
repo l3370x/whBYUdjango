@@ -5,12 +5,14 @@ Used for testing against as they are only correct for the years
 '''
 
 from datetime import tzinfo, timedelta, datetime
+
 from pytz import utc, UTC, HOUR, ZERO
+import time as _time
+
 
 # A class building tzinfo objects for fixed-offset time zones.
 # Note that FixedOffset(0, "UTC") is a different way to build a
 # UTC tzinfo object.
-
 class FixedOffset(tzinfo):
     """Fixed offset in minutes east from UTC."""
 
@@ -29,7 +31,6 @@ class FixedOffset(tzinfo):
 
 # A class capturing the platform's idea of local time.
 
-import time as _time
 
 STDOFFSET = timedelta(seconds = -_time.timezone)
 if _time.daylight:

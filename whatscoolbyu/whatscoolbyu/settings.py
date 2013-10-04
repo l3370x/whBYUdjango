@@ -1,11 +1,13 @@
 # Django settings for whatscoolbyu project.
-from django.conf.global_settings import EMAIL_HOST, EMAIL_HOST_USER,\
-	EMAIL_HOST_PASSWORD, EMAIL_PORT
+import os
+
+from django.conf.global_settings import EMAIL_HOST, EMAIL_HOST_USER, \
+    EMAIL_HOST_PASSWORD, EMAIL_PORT
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-import os
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 locHost = False
 if 'aaron' in ROOT_PATH:
@@ -150,9 +152,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'student',
-    'team',
-    'news',
-    'request',
 )
 
 EMAIL_HOST = "smtp.1and1.com"

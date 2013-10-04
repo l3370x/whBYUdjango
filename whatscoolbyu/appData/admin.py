@@ -1,5 +1,7 @@
-from student.models import Student,Team
 from django.contrib import admin
+
+from student.models import Student, Team
+
 
 class StudentAdmin(admin.ModelAdmin):
   fieldsets = [

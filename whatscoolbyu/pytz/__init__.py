@@ -25,20 +25,23 @@ __all__ = [
     'common_timezones', 'common_timezones_set',
     ]
 
-import sys, datetime, os.path, gettext
+import datetime
+import gettext
+import os.path
+import sys
+
+from pytz.exceptions import AmbiguousTimeError, InvalidTimeError, \
+    NonExistentTimeError, UnknownTimeZoneError
+from pytz.lazy import LazyDict, LazyList, LazySet
+from pytz.tzfile import build_tzinfo, _byte_string
+from pytz.tzinfo import unpickler
+
 
 try:
     from pkg_resources import resource_stream
 except ImportError:
     resource_stream = None
 
-from pytz.exceptions import AmbiguousTimeError
-from pytz.exceptions import InvalidTimeError
-from pytz.exceptions import NonExistentTimeError
-from pytz.exceptions import UnknownTimeZoneError
-from pytz.lazy import LazyDict, LazyList, LazySet
-from pytz.tzinfo import unpickler
-from pytz.tzfile import build_tzinfo, _byte_string
 
 
 try:

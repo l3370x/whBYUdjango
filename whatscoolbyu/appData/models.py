@@ -1,6 +1,6 @@
-from django.db import models
-from django.contrib.auth.models import User
 from django import forms
+from django.contrib.auth.models import User
+from django.db import models
 from django.forms.models import ModelForm
 from django.views.generic.edit import UpdateView
 
