@@ -16,11 +16,6 @@ html, body {
 	margin-bottom:10px;
 }
 
-.rightPage {
-	width: 600;
-	float: left;
-	margin-left: 10px;
-}
 
 .row-fluid {
 	margin-top:70px;
@@ -47,7 +42,7 @@ html, body {
     border-top-color: rgb(51, 51, 51);
     border-top-style: none;
     border-top-width: 0px;
-    #background-image: url("/static/images/Logo3.jpg");
+    /*background-image: url("/static/images/Logo3.jpg");*/
 	background-size: contain;
 	background-repeat: no-repeat;
     color: rgb(51, 51, 51);

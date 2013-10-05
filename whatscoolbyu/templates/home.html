@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% block extraHeader %}
+<link href='/static/templates/font.css' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css"
 	href="/static/templates/default.css" />
 <link rel="stylesheet" type="text/css"
@@ -6,134 +7,367 @@
 
 <script src="/static/js/masonry.pkgd.min.js"></script>
 <script src="/static/js/modernizr.custom.js"></script>
-{% endblock %} {% block content %}
-<ul class="grid effect-6" id="grid">
-	<li>
-		<div class="dateIdea">
-			<div class="dateTitle">Title</div>
-		<div class="dateDescription">1111111111This is the first.</div>
-		</div>
-	</li>
-	<li>
-		<div class="dateIdea"><div class="dateTitle">Title</div>
-		<div class="dateDescription">
-		2This idvasdvasdvasdvasdbfgbadfbas the
-			first.</div>
-			</div>
-	</li>
-	<li>
-		<div class="dateIdea"><div class="dateTitle">Title</div>
-		<div class="dateDescription">1111111111This is the first.</div></div>
-	</li>
-	<li>
-		<div class="dateIdea"><div class="dateTitle">Title</div>
-		<div class="dateDescription">1111111111This is the first.</div></div>
-	</li>
-	<li><div class="dateIdea"><div class="dateTitle">Title</div>
-		<div class="dateDescription">1111111111This is the first.This is how I feel. well, I don't
-			want to write all that, so here are the lyrics of what I am listening
-			to. But i'm afraind to love. so real by jeff buckly. oohhhh, i am so
-			riff like. oh I was so real. of i was so oh oh oh oh real.!!! the
-			firsasdfat.</div></div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This iThis gbdfgbedfgb the first.</div></li>
-	<li><div class="dateIdea">This is stsdfche first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This is thesdasdf first.</div></li>
-	<li><div class="dateIdea">This is asdvxcvasdvthe first.</div></li>
-	<li><div class="dateIdea">This idvasdvasfvasdva the first.</div></li>
-	<li><div class="dateIdea">This isasdfasd the first.</div></li>
-	<li><div class="dateIdea">This issdfasdf the first.</div></li>
-	<li><div class="dateIdea">This is thsdvasdve first.</div></li>
-	<li><div class="dateIdea">This isasdfasd the first.</div></li>
-	<li><div class="dateIdea">This is thxcvzxcve first.</div></li>
-	<li><div class="dateIdea">This is thzxcvzxcve first.</div></li>
-	<li><div class="dateIdea">This is thasdvasde first.</div></li>
-	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
-	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This idvasdvasdvasdvasdbfgbadfbas
-			the first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This idvasdvass the first.</div></li>
-	<li><div class="dateIdea">This is how I feel. well, I don't
-			want to write all that, so here are the lyrics of what I am listening
-			to. But i'm afraind to love. so real by jeff buckly. oohhhh, i am so
-			riff like. oh I was so real. of i was so oh oh oh oh real.!!! the
-			firsasdfat.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This iThis gbdfgbedfgb the first.</div></li>
-	<li><div class="dateIdea">This is stsdfche first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This is thesdasdf first.</div></li>
-	<li><div class="dateIdea">This is asdvxcvasdvthe first.</div></li>
-	<li><div class="dateIdea">This idvasdvasfvasdva the first.</div></li>
-	<li><div class="dateIdea">This isasdfasd the first.</div></li>
-	<li><div class="dateIdea">This issdfasdf the first.</div></li>
-	<li><div class="dateIdea">This is thsdvasdve first.</div></li>
-	<li><div class="dateIdea">This isasdfasd the first.</div></li>
-	<li><div class="dateIdea">This is thxcvzxcve first.</div></li>
-	<li><div class="dateIdea">This is thzxcvzxcve first.</div></li>
-	<li><div class="dateIdea">This is thasdvasde first.</div></li>
-	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
-	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This idvasdvasdvasdvasdbfgbadfbas
-			the first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This idvasdvass the first.</div></li>
-	<li><div class="dateIdea">This is how I feel. well, I don't
-			want to write all that, so here are the lyrics of what I am listening
-			to. But i'm afraind to love. so real by jeff buckly. oohhhh, i am so
-			riff like. oh I was so real. of i was so oh oh oh oh real.!!! the
-			firsasdfat.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This iThis gbdfgbedfgb the first.</div></li>
-	<li><div class="dateIdea">This is stsdfche first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This is thesdasdf first.</div></li>
-	<li><div class="dateIdea">This is asdvxcvasdvthe first.</div></li>
-	<li><div class="dateIdea">This idvasdvasfvasdva the first.</div></li>
-	<li><div class="dateIdea">This isasdfasd the first.</div></li>
-	<li><div class="dateIdea">This issdfasdf the first.</div></li>
-	<li><div class="dateIdea">This is thsdvasdve first.</div></li>
-	<li><div class="dateIdea">This isasdfasd the first.</div></li>
-	<li><div class="dateIdea">This is thxcvzxcve first.</div></li>
-	<li><div class="dateIdea">This is thzxcvzxcve first.</div></li>
-	<li><div class="dateIdea">This is thasdvasde first.</div></li>
-	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
-	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This idvasdvasdvasdvasdbfgbadfbas
-			the first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This idvasdvass the first.</div></li>
-	<li><div class="dateIdea">This is how I feel. well, I don't
-			want to write all that, so here are the lyrics of what I am listening
-			to. But i'm afraind to love. so real by jeff buckly. oohhhh, i am so
-			riff like. oh I was so real. of i was so oh oh oh oh real.!!! the
-			firsasdfat.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This iThis gbdfgbedfgb the first.</div></li>
-	<li><div class="dateIdea">This is stsdfche first.</div></li>
-	<li><div class="dateIdea">This is the first.</div></li>
-	<li><div class="dateIdea">This is thesdasdf first.</div></li>
-	<li><div class="dateIdea">This is asdvxcvasdvthe first.</div></li>
-	<li><div class="dateIdea">This idvasdvasfvasdva the first.</div></li>
-	<li><div class="dateIdea">This isasdfasd the first.</div></li>
-	<li><div class="dateIdea">This issdfasdf the first.</div></li>
-	<li><div class="dateIdea">This is thsdvasdve first.</div></li>
-	<li><div class="dateIdea">This isasdfasd the first.</div></li>
-	<li><div class="dateIdea">This is thxcvzxcve first.</div></li>
-	<li><div class="dateIdea">This is thzxcvzxcve first.</div></li>
-	<li><div class="dateIdea">This is thasdvasde first.</div></li>
-	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
-	<li><div class="dateIdea">This isvasdvasdvas the first.</div></li>
-
-</ul>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Rokkitt:700:latin', 'Open+Sans::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'false';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
 <script src="/static/js/imagesloaded.js"></script>
 <script src="/static/js/classie.js"></script>
 <script src="/static/js/AnimOnScroll.js"></script>
+{% endblock %} 
+
+{% block content %}
+<ul class="grid effect-6" id="grid">
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title1</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title2</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title3</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title 4</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title 5</div>
+			<div class="dateDescription">11ng to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li>
+	
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title  6</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title 7 a</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title 7b</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.This
+				is how I feel. well, I don't want to write all that, so here are the
+				lyrics of what I am listening to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li><li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.This
+				is how I feel. well, I don't want to write all that, so here are the
+				lyrics of what I am listening to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li><li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.This
+				is how I feel. well, I don't want to write all that, so here are the
+				lyrics of what I am listening to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li><li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">111want to write all that, so here are the
+				lyrics of what I am listening to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">11ng to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li>
+	
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.This
+				is how I feel. well, I don't want to write all that, so here are the
+				lyrics of what I am listening to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li><li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.This
+				is how I feel. well, I don't want to write all that, so here are the
+				lyrics of what I am listening to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li><li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.This
+				is how I feel. well, I don't want to write all that, so here are the
+				lyrics of what I am listening to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li><li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">2This idvasdvasdvasdvasdbfgbadfbas
+				the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">1111111111This is the first.</div>
+		</div>
+	</li>
+	<li>
+		<div class="dateIdea">
+			<div class="dateTitle">Title</div>
+			<div class="dateDescription">111want to write all that, so here are the
+				lyrics of what I am listening to. But i'm afraind to love. so real
+				by jeff buckly. oohhhh, i am so riff like. oh I was so real. of i
+				was so oh oh oh oh real.!!! the firsasdfat.</div>
+		</div>
+	</li>
+</ul>
 <script>
 	new AnimOnScroll(document.getElementById('grid'), {
 		minDuration : 0.4,

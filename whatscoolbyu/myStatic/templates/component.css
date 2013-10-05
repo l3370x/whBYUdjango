@@ -16,28 +16,33 @@
 
 .dateIdea {
 	background: white;
-	border-radius:5px;
-	-webkit-box-shadow:  1px 2px 5px 1px rgba(88, 88, 88, .3);
-    box-shadow:  1px 2px 5px 1px rgba(88, 88, 88, .3);
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 2px 5px 1px rgba(88, 88, 88, .3);
+	box-shadow: 1px 2px 5px 1px rgba(88, 88, 88, .3);
 }
 
 .dateTitle {
-	padding:10px;
+	padding: 10px;
+	border-bottom: 1px solid rgb(230, 230, 230);
+	text-shadow: 1px 1px 0 rgba(207, 207, 207, 1);
+	color: #000000; font-size : 23px;
+	text-align: left;
+	font-family: 'Rokkitt', serif;
+	line-height: 1;
+	font-size: 23px;
 }
 
 .dateDescription {
-	padding:5px;
+	padding: 5px;
 	padding-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.grid li.shown,
-.no-js .grid li,
-.no-cssanimations .grid li {
+.grid li.shown,.no-js .grid li,.no-cssanimations .grid li {
 	opacity: 1;
 }
 
-.grid li a,
-.grid li img {
+.grid li a,.grid li img {
 	outline: none;
 	border: none;
 	display: block;
